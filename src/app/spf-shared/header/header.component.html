@@ -26,7 +26,7 @@
         </div>
       </nav>
     </div>
-    <div class="col-12" style="margin-top: 5rem">
+    <div class="col-12" id="intro" style="margin-top: 5rem">
       <div class="row">
         <div class="col-md-6 col-sm-12 col-xs-12 align-self-center">
           <div class="row">
@@ -47,7 +47,7 @@
                 mat-raised-button
                 color="primary"
                 class="margin-r-16"
-                (click)="loadModule('projects')"
+                (click)="loadModule(false, 'projects')"
               >
                 Clients I worked for
               </button>
@@ -55,7 +55,7 @@
                 mat-raised-button
                 color="primary"
                 class="margin-r-16"
-                (click)="loadModule('skills-cert')"
+                (click)="loadModule(false, 'skills-cert')"
               >
                 Skills I'm good @
               </button>
@@ -63,14 +63,24 @@
                 mat-raised-button
                 color="primary"
                 class="margin-r-16"
-                (click)="loadModule('github')"
+                (click)="
+                  loadModule(
+                    true,
+                    'https://github.com/srinuhamps/srinivaskattaportfolio'
+                  )
+                "
               >
                 Link to my GitHub
               </button>
               <button
                 mat-raised-button
                 color="primary"
-                (click)="loadModule('linkedin')"
+                (click)="
+                  loadModule(
+                    true,
+                    'https://www.linkedin.com/in/srinivas-reddy-katta-75257b11a/'
+                  )
+                "
               >
                 LinkedIn
               </button>
