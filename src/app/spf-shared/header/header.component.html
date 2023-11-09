@@ -8,9 +8,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li><a class="nav-link" href="#">About</a></li>
                 <li><a class="nav-link" href="#">Services</a></li>
@@ -26,9 +24,13 @@
         </div>
       </nav>
     </div>
-    <div class="col-12" id="intro" style="margin-top: 5rem">
+    <div class="col-12" style="margin-top: 5rem">
       <div class="row">
-        <div class="col-md-6 col-sm-12 col-xs-12 align-self-center">
+
+        <div class="col-md-4 col-sm-12 col-xs-12 order-sm-2 text-center margin-t-16">
+          <img class="profile-image" src="./../../../assets/images/unnamed__1_-removebg-preview.png" alt="" />
+        </div>
+        <div class="col-md-8 col-sm-12 col-xs-12 order-sm-1 d-flex justify-content-end margin-t-16">
           <div class="row">
             <div class="col-12">
               <h3 class="intro">
@@ -43,58 +45,131 @@
               </p>
             </div>
             <div class="col-12">
-              <button
-                mat-raised-button
-                color="primary"
-                class="margin-r-16"
-                (click)="loadModule(false, 'projects')"
-              >
-                Clients I worked for
-              </button>
-              <button
-                mat-raised-button
-                color="primary"
-                class="margin-r-16"
-                (click)="loadModule(false, 'skills-cert')"
-              >
-                Skills I'm good @
-              </button>
-              <button
-                mat-raised-button
-                color="primary"
-                class="margin-r-16"
-                (click)="
-                  loadModule(
-                    true,
-                    'https://github.com/srinuhamps/srinivaskattaportfolio'
-                  )
-                "
-              >
-                Link to my GitHub
-              </button>
-              <button
-                mat-raised-button
-                color="primary"
-                (click)="
-                  loadModule(
-                    true,
-                    'https://www.linkedin.com/in/srinivas-reddy-katta-75257b11a/'
-                  )
-                "
-              >
-                LinkedIn
-              </button>
+              <div class="row">
+                <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                  <div class="row">
+                    <div class="col-12">
+                      <button mat-raised-button color="primary" class="margin-r-16"
+                        (click)="loadModule(false, 'projects')">
+                        Clients I worked for
+                      </button>
+                      <button mat-raised-button color="primary" class="margin-r-16"
+                        (click)="loadModule(false, 'skills-cert')">
+                        Skills I'm good &#64;
+                      </button>
+                      <button mat-raised-button color="primary" class="margin-r-16" (click)="
+                      loadModule(
+                        true,
+                        'https://github.com/srinuhamps/srinivaskattaportfolio'
+                      )
+                    ">
+                        Link to my GitHub
+                      </button>
+                      <button mat-raised-button color="primary" (click)="
+                      loadModule(
+                        true,
+                        'https://www.linkedin.com/in/srinivas-reddy-katta-75257b11a/'
+                      )
+                    ">
+                        LinkedIn
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="d-none d-sm-none d-md-block d-lg-block d-xl-none d-xxl-none">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-12">
+                          <button mat-raised-button color="primary" class="margin-r-16"
+                            (click)="loadModule(false, 'projects')">
+                            Clients I worked for
+                          </button>
+                        </div>
+                        <div class="col-12">
+                          <button mat-raised-button color="primary" class="margin-r-16"
+                            (click)="loadModule(false, 'skills-cert')">
+                            Skills I'm good &#64;
+                          </button>
+                        </div>
+                      </div>
+
+
+                    </div>
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-12">
+                          <button mat-raised-button color="primary" class="margin-r-16" (click)="
+                          loadModule(
+                            true,
+                            'https://github.com/srinuhamps/srinivaskattaportfolio'
+                          )
+                        ">
+                            Link to my GitHub
+                          </button>
+                        </div>
+                        <div class="col-12">
+                          <button mat-raised-button color="primary" (click)="
+                          loadModule(
+                            true,
+                            'https://www.linkedin.com/in/srinivas-reddy-katta-75257b11a/'
+                          )
+                        ">
+                            LinkedIn
+                          </button>
+
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none">
+                  <div class="row">
+                    <div class="col-12 text-center">
+                      <button mat-raised-button color="primary" class="margin-r-16"
+                        (click)="loadModule(false, 'projects')">
+                        Clients I worked for
+                      </button>
+
+                    </div>
+                    <div class="col-12 text-center">
+
+                      <button mat-raised-button color="primary" class="margin-r-16"
+                        (click)="loadModule(false, 'skills-cert')">
+                        Skills I'm good &#64;
+                      </button>
+                    </div>
+                    <div class="col-12 text-center">
+                      <button mat-raised-button color="primary" class="margin-r-16" (click)="
+                      loadModule(
+                        true,
+                        'https://github.com/srinuhamps/srinivaskattaportfolio'
+                      )
+                    ">
+                        Link to my GitHub
+                      </button>
+
+                    </div>
+                    <div class="col-12 text-center">
+
+                      <button mat-raised-button color="primary" (click)="
+                      loadModule(
+                        true,
+                        'https://www.linkedin.com/in/srinivas-reddy-katta-75257b11a/'
+                      )
+                    ">
+                        LinkedIn
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+
           </div>
-        </div>
-        <div class="col-md-6 col-sm-12 col-xs-12 d-flex justify-content-end">
-          <img
-            class="profile-image"
-            src="./../../../assets/images/unnamed__1_-removebg-preview.png"
-            alt=""
-          />
         </div>
       </div>
     </div>
   </div>
-</div>

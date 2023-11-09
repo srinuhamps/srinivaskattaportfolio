@@ -7,18 +7,18 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  @HostListener('window:scroll', ['$event'])
-  onScroll(e: any) {
-    const wrap = document.getElementById('wrap') as HTMLElement;
+  // @HostListener('window:scroll', ['$event'])
+  // onScroll(e: any) {
+  //   const wrap = document.getElementById('wrap') as HTMLElement;
 
-    wrap.addEventListener('scroll', function (e) {
-      if (this.scrollTop > 147) {
-        wrap.classList.add('fix-search');
-      } else {
-        wrap.classList.remove('fix-search');
-      }
-    });
-  }
+  //   wrap.addEventListener('scroll', function (e) {
+  //     if (this.scrollTop > 147) {
+  //       wrap.classList.add('fix-search');
+  //     } else {
+  //       wrap.classList.remove('fix-search');
+  //     }
+  //   });
+  // }
 
   constructor(private router: Router) {}
   loadModule(link: boolean, path: string) {

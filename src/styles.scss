@@ -175,8 +175,15 @@ body {
 .mat-button-toggle {
   border-radius: 7px;
   border-left: 0px !important;
-  background: #1f4d66;
-  color: white;
+  background: rgba(31, 77, 102, 0);
+  color: #5a7683;
+  border: 1px solid #1f4d66;
+}
+
+.mat-mdc-raised-button {
+  margin-top: 7px !important;
+  margin-bottom: 7px !important;
+
 }
 
 // .mat-button-toggle-group-appearance-standard .mat-button-toggle + .mat-button-toggle

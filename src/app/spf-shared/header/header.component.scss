@@ -26,34 +26,29 @@
 
 .profile-image {
     background-color: #212529;
-    border-radius: 43% 50% 46% 0% / 43% 50% 46% 0%;
-    height: 25em;
-    width: 26em;
-    padding: 45px 45px 0px 45px;
+    border-radius: 100px;
+    height: 10em;
+    width: 10em;
 }
 
-@include media-breakpoint-only(xs) {
+@include media-breakpoint-up(sm) {
     .profile-image {
-        height: 5em;
-        width: 6em;
+        border-radius: 100px;
+        height: 10em;
+        width: 10em;
         padding: 0px;
     }
 }
 
-@include media-breakpoint-only(sm) {
+@include media-breakpoint-up(lg) {
     .profile-image {
-        height: 5em;
-        width: 6em;
-        padding: 0px;
+        border-radius: 43% 50% 46% 0%/43% 50% 46% 0%;
+        height: 17em;
+        width: 17em;
     }
 }
 
-@include media-breakpoint-only(md) {
-    .profile-image {
-        height: 15em;
-        width: 16em;
-    }
-}
+
 
 // @include media-breakpoint-only(lg) {}
 
