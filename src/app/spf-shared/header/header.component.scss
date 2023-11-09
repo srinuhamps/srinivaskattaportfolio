@@ -1,0 +1,62 @@
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins';
+
+.bg-body-tertiary {
+    background-color: #193036 !important;
+
+    h1,
+    a,
+    ul>li {
+        color: white;
+    }
+}
+
+.intro {
+    color: white;
+}
+
+.title {
+    color: white;
+}
+
+.brief {
+    color: white;
+}
+
+.profile-image {
+    background-color: #212529;
+    border-radius: 43% 50% 46% 0% / 43% 50% 46% 0%;
+    height: 25em;
+    width: 26em;
+    padding: 45px 45px 0px 45px;
+}
+
+@include media-breakpoint-only(xs) {
+    .profile-image {
+        height: 5em;
+        width: 6em;
+        padding: 0px;
+    }
+}
+
+@include media-breakpoint-only(sm) {
+    .profile-image {
+        height: 5em;
+        width: 6em;
+        padding: 0px;
+    }
+}
+
+@include media-breakpoint-only(md) {
+    .profile-image {
+        height: 15em;
+        width: 16em;
+    }
+}
+
+// @include media-breakpoint-only(lg) {}
+
+// @include media-breakpoint-only(xl) {}
+
+// @include media-breakpoint-only(xxl) {}

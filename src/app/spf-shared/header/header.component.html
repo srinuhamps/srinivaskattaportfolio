@@ -1,0 +1,90 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <h1>UI Portfolio</h1>
+          <form class="d-flex" role="search">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li><a class="nav-link" href="#">About</a></li>
+                <li><a class="nav-link" href="#">Services</a></li>
+                <li><a class="nav-link" href="#">Certifications</a></li>
+                <li><a class="nav-link" href="#">Contact</a></li>
+              </ul>
+            </div>
+
+            <button mat-raised-button color="accent" class="margin-r-16">
+              Hire Me
+            </button>
+          </form>
+        </div>
+      </nav>
+    </div>
+    <div class="col-12" style="margin-top: 5rem">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 col-xs-12 align-self-center">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="intro">
+                Srinivas Reddy Katta <em style="font-size: medium">(Srini)</em>
+              </h3>
+              <h4 class="title">UI Developer</h4>
+              <p class="brief">
+                Experienced web developer with most current technical skills in
+                the market. have passion for coding and problem solving.
+                Independent and also a good team player. Management graduate by
+                academics but, UI Developer by passion.
+              </p>
+            </div>
+            <div class="col-12">
+              <button
+                mat-raised-button
+                color="primary"
+                class="margin-r-16"
+                (click)="loadModule('projects')"
+              >
+                Clients I worked for
+              </button>
+              <button
+                mat-raised-button
+                color="primary"
+                class="margin-r-16"
+                (click)="loadModule('skills-cert')"
+              >
+                Skills I'm good @
+              </button>
+              <button
+                mat-raised-button
+                color="primary"
+                class="margin-r-16"
+                (click)="loadModule('github')"
+              >
+                Link to my GitHub
+              </button>
+              <button
+                mat-raised-button
+                color="primary"
+                (click)="loadModule('linkedin')"
+              >
+                LinkedIn
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12 d-flex justify-content-end">
+          <img
+            class="profile-image"
+            src="./../../../assets/images/unnamed__1_-removebg-preview.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

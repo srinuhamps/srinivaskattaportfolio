@@ -1,0 +1,33 @@
+<mat-button-toggle-group
+  name="fontStyle"
+  aria-label="Font Style"
+  (change)="navigate($event)"
+>
+  <mat-button-toggle
+    value="htcsom"
+    selected
+    matTooltip="State of Michigan - Department of Health and Human Services"
+    matTooltipPosition="above"
+    >State of Michigan</mat-button-toggle
+  >
+  <mat-button-toggle
+    value="toyota"
+    matTooltip="Toyota Motor North America - Plano, TX"
+    matTooltipPosition="above"
+    >Toyota Motor North America</mat-button-toggle
+  >
+  <mat-button-toggle
+    value="bcbs"
+    matTooltip="Blueshild of California - San Fransisco"
+    matTooltipPosition="above"
+    >Blueshild of California</mat-button-toggle
+  >
+  <mat-button-toggle
+    value="ecopound"
+    matTooltip="Ecopound Solutions - Hyderabad"
+    matTooltipPosition="above"
+    >Ecopound Solutions</mat-button-toggle
+  >
+</mat-button-toggle-group>
+
+<router-outlet></router-outlet>
